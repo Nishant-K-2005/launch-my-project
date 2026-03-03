@@ -1,9 +1,9 @@
 # Launch My Project
-A Go CLI to launch all services of a development project concurrently using goroutines.
+A lightweight Go CLI to launch all services of a development project concurrently using goroutines.
 
-Instead of manually starting frontend, backend, and other services one by one, run:
+Instead of manually starting frontend, backend, and other services one by one, simply run:
 
-```launch <project_name>```
+`launcher <project_name>`
 
 and your full dev environment boots instantly.
 
@@ -18,15 +18,15 @@ and your full dev environment boots instantly.
 Clone the repository:
 
 ```
-git clone https://github.com/<your-username>/launch-my-project.git
+git clone https://github.com/Nishant-K-2005/launch-my-project.git
 cd launch-my-project
-go build -o <command_name>
+go build
 ```
 
-Move the binary name <command_name> to your PATH and give permissions:
+Move the binary to your PATH and give permissions:
 ```
-sudo cp <command_name> /usr/local/bin/<command_name>
-sudo chmod +x /usr/local/bin/<command_name>
+sudo cp launcher /usr/local/bin/launcher
+sudo chmod +x /usr/local/bin/launcher
 ```
 
 ### Configuration
@@ -38,7 +38,7 @@ Create a config file at: ~/.config/launcher.json
     "commands": [
       "code .",
       "cd frontend && npm run dev",
-      "cd backend && npx nodemon",
+      "cd backend && npx nodemon"
     ]
   }
 }
@@ -46,7 +46,7 @@ Create a config file at: ~/.config/launcher.json
 
 ### Usage
 ```bash
-<command_name> my_project
+launcher my_project
 ```
 
 ### Why I Built This
