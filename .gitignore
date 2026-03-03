@@ -1,0 +1,9 @@
+# compiled binaries 
+/bin/
+*.exe
+*.out
+launch
+launcher
+
+# OS junk
+.DS_Store

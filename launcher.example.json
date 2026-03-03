@@ -1,0 +1,11 @@
+{
+    "my_project":{
+        "path": "path/to/my_project",
+        "commands":[
+            "code .",
+            "cd frontend && npm run dev",
+            "cd backend && npx nodemon",
+            "xpg-open http://localhost:3000"
+        ]
+    }
+}
