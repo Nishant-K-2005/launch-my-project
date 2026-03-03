@@ -52,3 +52,6 @@ launcher my_project
 ### Why I Built This
 While working on multiple projects, I found myself repeatedly starting several services manually.
 This tool removes that friction and improves development workflow.
+
+### Note
+Currently tested on Linux. Other platforms may require minor adjustments.
